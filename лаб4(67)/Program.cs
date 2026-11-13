@@ -164,7 +164,6 @@ namespace Lab6
             Console.WriteLine($"null == null ? {n == null}");
         }
 
-        // ================= НОВЫЕ ТЕСТЫ ДЛЯ 7 ЗАДАНИЯ =================
 
         static void TestUnary()
         {
@@ -187,10 +186,9 @@ namespace Lab6
             int xi = (int)p;
             Console.WriteLine($"(int)p = {xi}   (целая часть X)");
 
-            double yd = p; // неявное приведение
+            double yd = p;
             Console.WriteLine($"double d = p;  d = {yd}   (значение Y)");
 
-            // Проверка неявного приведения в выражении
             Console.WriteLine($"p + 0.5 = {p + 0.5}   (сработало неявное приведение Y)");
         }
 
