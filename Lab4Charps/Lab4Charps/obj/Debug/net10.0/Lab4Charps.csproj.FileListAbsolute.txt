@@ -1,0 +1,15 @@
+C:\Users\vitek\source\repos\Lab4Charps\Lab4Charps\obj\Debug\net10.0\Lab4Charps.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vitek\source\repos\Lab4Charps\Lab4Charps\obj\Debug\net10.0\Lab4Charps.AssemblyInfoInputs.cache
+C:\Users\vitek\source\repos\Lab4Charps\Lab4Charps\obj\Debug\net10.0\Lab4Charps.AssemblyInfo.cs
+C:\Users\vitek\source\repos\Lab4Charps\Lab4Charps\obj\Debug\net10.0\Lab4Charps.csproj.CoreCompileInputs.cache
+C:\Users\vitek\source\repos\Lab4Charps\Lab4Charps\bin\Debug\net10.0\Lab4Charps.exe
+C:\Users\vitek\source\repos\Lab4Charps\Lab4Charps\bin\Debug\net10.0\Lab4Charps.deps.json
+C:\Users\vitek\source\repos\Lab4Charps\Lab4Charps\bin\Debug\net10.0\Lab4Charps.runtimeconfig.json
+C:\Users\vitek\source\repos\Lab4Charps\Lab4Charps\bin\Debug\net10.0\Lab4Charps.dll
+C:\Users\vitek\source\repos\Lab4Charps\Lab4Charps\bin\Debug\net10.0\Lab4Charps.pdb
+C:\Users\vitek\source\repos\Lab4Charps\Lab4Charps\obj\Debug\net10.0\Lab4Charps.dll
+C:\Users\vitek\source\repos\Lab4Charps\Lab4Charps\obj\Debug\net10.0\refint\Lab4Charps.dll
+C:\Users\vitek\source\repos\Lab4Charps\Lab4Charps\obj\Debug\net10.0\Lab4Charps.pdb
+C:\Users\vitek\source\repos\Lab4Charps\Lab4Charps\obj\Debug\net10.0\Lab4Charps.genruntimeconfig.cache
+C:\Users\vitek\source\repos\Lab4Charps\Lab4Charps\obj\Debug\net10.0\ref\Lab4Charps.dll
+C:\Users\vitek\source\repos\Lab4Charps\Lab4Charps\obj\Debug\net10.0\Lab4Charps.csproj.Up2Date

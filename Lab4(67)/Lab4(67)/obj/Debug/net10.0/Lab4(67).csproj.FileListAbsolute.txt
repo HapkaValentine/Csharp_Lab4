@@ -1,0 +1,15 @@
+C:\Users\vitek\source\repos\Lab4(67)\Lab4(67)\obj\Debug\net10.0\Lab4(67).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vitek\source\repos\Lab4(67)\Lab4(67)\obj\Debug\net10.0\Lab4(67).AssemblyInfoInputs.cache
+C:\Users\vitek\source\repos\Lab4(67)\Lab4(67)\obj\Debug\net10.0\Lab4(67).AssemblyInfo.cs
+C:\Users\vitek\source\repos\Lab4(67)\Lab4(67)\obj\Debug\net10.0\Lab4(67).csproj.CoreCompileInputs.cache
+C:\Users\vitek\source\repos\Lab4(67)\Lab4(67)\bin\Debug\net10.0\Lab4(67).exe
+C:\Users\vitek\source\repos\Lab4(67)\Lab4(67)\bin\Debug\net10.0\Lab4(67).deps.json
+C:\Users\vitek\source\repos\Lab4(67)\Lab4(67)\bin\Debug\net10.0\Lab4(67).runtimeconfig.json
+C:\Users\vitek\source\repos\Lab4(67)\Lab4(67)\bin\Debug\net10.0\Lab4(67).dll
+C:\Users\vitek\source\repos\Lab4(67)\Lab4(67)\bin\Debug\net10.0\Lab4(67).pdb
+C:\Users\vitek\source\repos\Lab4(67)\Lab4(67)\obj\Debug\net10.0\Lab4(67).dll
+C:\Users\vitek\source\repos\Lab4(67)\Lab4(67)\obj\Debug\net10.0\refint\Lab4(67).dll
+C:\Users\vitek\source\repos\Lab4(67)\Lab4(67)\obj\Debug\net10.0\Lab4(67).pdb
+C:\Users\vitek\source\repos\Lab4(67)\Lab4(67)\obj\Debug\net10.0\Lab4(67).genruntimeconfig.cache
+C:\Users\vitek\source\repos\Lab4(67)\Lab4(67)\obj\Debug\net10.0\ref\Lab4(67).dll
+C:\Users\vitek\source\repos\Lab4(67)\Lab4(67)\obj\Debug\net10.0\Lab4(67).csproj.Up2Date
