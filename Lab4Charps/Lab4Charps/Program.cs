@@ -200,25 +200,42 @@ namespace Lab4
         }
 
         static void Task4()
-        {
-            string path = FileHelper.FindProjectFile("task4.txt");
-            if (path == null)
-            {
-                Console.WriteLine("Файл task4.txt не найден в папке проекта.");
-                return;
-            }
+{
+    string path = FileHelper.FindProjectFile("task4.txt");
+    if (path == null)
+    {
+        Console.WriteLine("Файл task4.txt не найден.");
+        return;
+    }
 
-            Console.WriteLine("Читаю файл: " + path);
-            string text = File.ReadAllText(path);
+    StreamReader f;
+    string text = "";
+    try
+    {
+        f = new StreamReader(path);
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine("Ошибка при открытии файла: " + e.Message);
+        return;
+    }
 
-            TextAnalyzer analyzer = new TextAnalyzer(text);
-            List<char> result = analyzer.ConsonantsInExactlyOneWord();
+    string s;
+    while ((s = f.ReadLine()) != null)
+    {
+        text += s + " ";
+    }
+    
+    f.Close();
 
-            if (result.Count == 0)
-                Console.WriteLine("Нет согласных, входящих ровно в одно слово.");
-            else
-                Console.WriteLine("Согласные, входящие ровно в одно слово: " + string.Join(", ", result));
-        }
+    TextAnalyzer analyzer = new TextAnalyzer(text);
+    List<char> result = analyzer.ConsonantsInExactlyOneWord();
+
+    if (result.Count == 0)
+        Console.WriteLine("Нет согласных, входящих ровно в одно слово.");
+    else
+        Console.WriteLine("Согласные, входящие ровно в одно слово: " + string.Join(", ", result));
+}
 
         static void CreateMultathlonFile(string path)
         {
