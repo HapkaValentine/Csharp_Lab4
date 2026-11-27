@@ -249,49 +249,54 @@ namespace Lab4Charps
         }
 
         public void LoadFromFile(string path)
+{
+    _results.Clear();
+    List<string> lines = new List<string>();
+
+    StreamReader f;
+    try
+    {
+        f = new StreamReader(path);
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine("Ошибка чтения файла: " + e.Message);
+        return;
+    }
+
+    string s;
+    while ((s = f.ReadLine()) != null)
+    {
+        lines.Add(s);
+    }
+    f.Close();
+
+    if (lines.Count == 0) return;
+
+    int n;
+    if (!int.TryParse(lines[0].Trim(), out n)) return;
+
+    for (int i = 1; i <= n && i < lines.Count; i++)
+    {
+        string line = lines[i].Trim();
+        if (line.Length == 0) continue;
+
+        string[] parts = line.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+        if (parts.Length < 6) continue;
+
+        string name = parts[0] + " " + parts[1];
+        int sum = 0;
+        
+        for (int j = 2; j < 6; j++)
         {
-            _results.Clear();
-            string[] lines = File.ReadAllLines(path);
-            if (lines.Length == 0) return;
-
-            int n;
-            if (!int.TryParse(lines[0].Trim(), out n)) return;
-
-            for (int i = 1; i <= n && i < lines.Length; i++)
-            {
-                string line = lines[i].Trim();
-                if (line.Length == 0) continue;
-
-                string[] parts = line.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                if (parts.Length < 6) continue;
-
-                string name = parts[0] + " " + parts[1];
-                int sum = 0;
-                bool isValid = true;
-
-                for (int j = 2; j < 6; j++)
-                {
-                    int score;
-                    if (int.TryParse(parts[j], out score) && score >= 0 && score <= 10)
-                    {
-                        sum += score;
-                    }
-                    else
-                    {
-                        isValid = false;
-                        break;
-                    }
-                }
-
-                if (isValid)
-                {
-                    if (!_results.ContainsKey(name) || _results[name] < sum)
-                    {
-                        _results[name] = sum;
-                    }
-                }
-            }
+            int score;
+            if (int.TryParse(parts[j], out score)) sum += score;
         }
+
+        if (!_results.ContainsKey(name) || _results[name] < sum)
+            _results[name] = sum;
+    }
+}
 
         private class DescendingComparer : IComparer<KeyValuePair<string, int>>
         {
